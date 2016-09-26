@@ -25,10 +25,10 @@ If you read the data sheet you’ll see that you need to send the value 0x2000 t
 
 The sine and triangle wave outputs are around 0.6v pk-pk coming from the module.
 
-The module is currently wired up to an atmega328p running arduino code programmed via the 6pin ISP header. It’s running of the 8Mhz internal clock but the atmega328p can also be run off the 25Mhz reference clock if necessary by changing the fuse bits. The atmega pin XTAL1 is wired to the ref clock output from the ad9833 module.
+The module is currently wired up to an arduino nano. There's variable gain opamp stage that you can control from a potentiometer and another pot wired up to A7 that you can use as input to arduino sketches.
 
 
-Phase detector
+##Phase detector
 
 Measures the phase difference between the signal coming from the frequency generator and the current through the tuning fork AFM. Does zero crossing detection on both signals, using one to start a linear ramp (555) then uses the other to trigger a sample and hold IC, outputs this value. 
 
@@ -58,7 +58,7 @@ Needs firmware.
 
 Driven by GXSM.
 
-Power supply
+##Power supply
 https://octopart.com/tmp+15515c-tracopower-8602141
 
 Tracopower TMP 15515C

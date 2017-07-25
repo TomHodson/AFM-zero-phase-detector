@@ -1,6 +1,11 @@
 # AFM-zero-phase-detector
 schematics and notes for a quartz resonator based atomic force microscope.
 
+#Files
+- sweep.py a utility to send frequency values down the serial line for testing
+- AFM_stripboard_schematic schematics for the board that's built up on stripboard
+- Arduino_AD9833_serial_controller an arduino sketch to control the frequency generator via the serial line.
+
 #System components
 
 ##Frequency generator 
